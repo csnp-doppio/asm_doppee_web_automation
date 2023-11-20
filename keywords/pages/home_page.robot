@@ -6,6 +6,7 @@ Resource    ${CURDIR}/../import.robot
 Input Search Text
     [Arguments]    ${word}
     Input Text    xpath=//input[contains(@class, 'ant-input')]    ${word}
+    Press Keys    xpath=//input[contains(@class, 'ant-input')]    ENTER
 
 
 Submit Input Search

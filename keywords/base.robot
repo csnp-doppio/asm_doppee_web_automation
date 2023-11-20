@@ -5,12 +5,12 @@ Resource    ${CURDIR}/import.robot
 Open doppee web application
 
     ${URL}    Set Variable    ${EMPTY}
-    IF  '${env}' == 'sit'
+    IF  '${env}' == 'sit'    # robotcode: ignore
         ${URL}  Set Variable    https://doppee.doppio-tech.com
-    ELSE IF  '${env}' == 'uat'
+    ELSE IF  '${env}' == 'uat'    # robotcode: ignore
         ${URL}  Set Variable    https://training-platform.doppio-tech.com    
     END
-
+    
     Open Browser   ${URL}    chrome
     Maximize Browser Window
 

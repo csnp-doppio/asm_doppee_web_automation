@@ -1,22 +1,21 @@
 *** Settings ***
 Resource    ${CURDIR}/../keywords/import.robot
-Suite Teardown  Sleep   5
 
 
 *** Test Cases ***
 TC-001: Create new user and create order by purchase product
-    ${email}    Set Variable    RamMaling1124@gmail.com
+    ${email}    Set Variable    RamMaling328@gmail.com
     ${passwd}   Set Variable    Ram@332211
 
     base.Open doppee web application
-    # topbar_page.Click profile icon
-    # login_page.Click sign up button
-    # register_feature.Register new user account    ${email}    ${passwd}
-    # home_page.Current page should be home page
+    topbar_page.Click profile icon
+    login_page.Click sign up button
+    register_feature.Register new user account    ${email}    ${passwd}
+    home_page.Current page should be home page
 
-    # topbar_page.Click profile icon
-    # account_page.Click logout button
-    # home_page.Current page should be home page
+    topbar_page.Click profile icon
+    account_page.Click logout button
+    home_page.Current page should be home page
     
     topbar_page.Click profile icon
     login_feature.Login with email and password    ${email}    ${passwd}
@@ -33,4 +32,3 @@ TC-001: Create new user and create order by purchase product
     ...     12/27
     ...     943
     ...     Any Name
-    

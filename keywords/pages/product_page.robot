@@ -9,5 +9,6 @@ Click add product to cart
 
 
 Click ok button on modal after add to cart
+    Sleep    0.5
     Wait Until Page Contains Element    xpath=//div[@class='ant-modal-content']    
     Click Button    xpath=//div[@class='ant-modal-confirm-btns']//button

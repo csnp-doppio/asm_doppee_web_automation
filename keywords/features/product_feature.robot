@@ -6,4 +6,3 @@ Resource    ${CURDIR}/../import.robot
 Add product to cart
     product_page.Click add product to cart
     product_page.Click ok button on modal after add to cart
-    
