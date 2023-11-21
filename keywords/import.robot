@@ -1,6 +1,6 @@
 *** Settings ***
 Library     SeleniumLibrary
-Resource    ${CURDIR}/../common/common.robot
+Resource    ${CURDIR}/common/common.robot
 
 # Features
 Resource    ${CURDIR}/features/home_feature.robot

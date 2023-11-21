@@ -1,5 +1,5 @@
 *** Settings ***
-Resource    ${CURDIR}/../keywords/import.robot
+Resource    ${CURDIR}/../import.robot
 
 *** Keywords ***
 Open doppee web application
