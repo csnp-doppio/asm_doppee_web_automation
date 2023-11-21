@@ -4,11 +4,11 @@ Resource    ${CURDIR}/../import.robot
 
 *** Keywords ***
 Click add product to cart
-    base.Scroll to bottom of page
+    common.Scroll to bottom of page
+    Wait Until Page Contains Element    xpath=//div[@class='icon-portion']    
     Click button   xpath=//button[contains(@class, 'cart-button')]
 
 
 Click ok button on modal after add to cart
-    Sleep    0.5
     Wait Until Page Contains Element    xpath=//div[@class='ant-modal-content']    
     Click Button    xpath=//div[@class='ant-modal-confirm-btns']//button

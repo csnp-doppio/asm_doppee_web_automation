@@ -1,5 +1,5 @@
 *** Settings ***
-Resource    ${CURDIR}/import.robot
+Resource    ${CURDIR}/../keywords/import.robot
 
 *** Keywords ***
 Open doppee web application
@@ -17,10 +17,10 @@ Open doppee web application
 
 
 Scroll to top of page
-    Sleep   1
+    Sleep    0.5
     Execute Javascript  window.scrollTo(0, 0);
 
 
 Scroll to bottom of page
-    Sleep   1
+    Sleep    0.5
     Execute Javascript  window.scrollTo(0, document.body.scrollHeight);

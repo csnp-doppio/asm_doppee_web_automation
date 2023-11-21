@@ -4,10 +4,10 @@ Resource    ${CURDIR}/../keywords/import.robot
 
 *** Test Cases ***
 TC-001: Create new user and create order by purchase product
-    ${email}    Set Variable    RamMaling328@gmail.com
+    ${email}    Set Variable    RamMaling338@gmail.com
     ${passwd}   Set Variable    Ram@332211
 
-    base.Open doppee web application
+    common.Open doppee web application
     topbar_page.Click profile icon
     login_page.Click sign up button
     register_feature.Register new user account    ${email}    ${passwd}
